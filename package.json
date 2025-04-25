@@ -1,0 +1,18 @@
+{
+  "name": "daily",
+  "version": "1.0.0",
+  "description": "",
+  "author": "https://github.com/linx4200",
+  "license": "ISC",
+  "scripts": {
+    "esbuild": "./node_modules/.bin/esbuild src/ts/1-isolatedModules/index.ts --outfile=outputs/esbuild.js",
+    "babel": "babel src/ts/1-isolatedModules/index.ts -o outputs/babel.js",
+    "tsc": "tsc src/ts/1-isolatedModules/index.ts --outDir outputs/tsc"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.27.0",
+    "@babel/core": "^7.26.10",
+    "esbuild": "0.25.2",
+    "typescript": "^5.8.3"
+  }
+}
