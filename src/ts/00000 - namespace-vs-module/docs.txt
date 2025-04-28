@@ -1,0 +1,20 @@
+# module 和 namespace 有什么区别？
+
+https://github.com/microsoft/TypeScript/issues/51825
+
+
+在 typescript 中 "module" 是不推荐使用的了
+
+todo:
+https://www.typescriptlang.org/docs/handbook/namespaces-and-modules.html#-reference-ing-a-module
+
+
+originally, TypeScript was designed with speculation that JavaScript would have two organizational schemes: "external modules" and "internal modules". External modules were files with isolated top-level scopes that could import/export values. Internal modules were named blocks of code that could export values.
+Eventually, JavaScript just got "external modules" and called them "modules". TypeScript was left with two concepts and eventually it was too confusing. So in TypeScript 1.5, we introduced the namespace keyword to make the distinction clearer.
+
+
+todo: what's "module" in javascript
+
+todo: what's "module" in typescript
+
+"module" 是不推荐使用的了

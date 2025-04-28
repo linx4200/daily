@@ -1,0 +1,15 @@
+# Namespaces 是什么
+
+目的:
+1. keep track of our types
+2. not worry about name collisions with other objects
+
+所以：
+把 object 放到一个 namespace 里
+
+
+emit 后 namespace 是一个对象。
+
+一般写代码的时候，我们很少使用 namespace, 因为它实际上等同于 module object 的写法，模块化的写法已经能完成一样的功能。
+
+更多使用在 declare 的场景上。
