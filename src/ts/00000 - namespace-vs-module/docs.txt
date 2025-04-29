@@ -1,5 +1,10 @@
 # module 和 namespace 有什么区别？
 
+
+https://www.typescriptlang.org/docs/handbook/namespaces-and-modules.html
+
+
+
 https://github.com/microsoft/TypeScript/issues/51825
 
 
@@ -13,7 +18,16 @@ originally, TypeScript was designed with speculation that JavaScript would have 
 Eventually, JavaScript just got "external modules" and called them "modules". TypeScript was left with two concepts and eventually it was too confusing. So in TypeScript 1.5, we introduced the namespace keyword to make the distinction clearer.
 
 
-todo: what's "module" in javascript
+## what's "module" in javascript
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
+
+(It may sound obvious to say that each file in a module system is called a “module” but the term is often used to contrast with script files, which run outside a module system, in a global scope.)
+https://www.typescriptlang.org/docs/handbook/modules/theory.html
+
+
+
+##
+
 
 todo: what's "module" in typescript
 

@@ -1,0 +1,1 @@
+console.log(dog, 'is cute too!');
