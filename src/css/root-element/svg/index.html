@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    /* 选择文档的根元素（HTML 中的 <html>） */
+    :root {
+      --bg-color: #ffffff;
+    }
+    :root.dark {
+      --bg-color: #1e1e1e;
+    }
+  </style>
+</head>
+<body>
+  <h1>SVG with :root Variables</h1>
+
+  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="30" r="20" class="circle" />
+    <rect x="30" y="60" width="40" height="30" class="box" />
+  </svg>
+
+  <br />
+
+  <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+  <script>
+    function toggleDarkMode() {
+      document.documentElement.classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>
