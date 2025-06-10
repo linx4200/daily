@@ -15,7 +15,7 @@ const subApps = [
 
 // 方式1: 加载远程子应用并渲染其组件
 import { lazy } from 'react';
-const RemoteComponent = lazy(() => fetch(subApp.entry));
+const RemoteComponent = lazy(import(/* webpackIgnore: true */ subApp.entry));
 const App = () => {
   return (
     <Suspense fallback={<Loading />}>
